@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+      {
+          "type": "cppbuild",
+          "label": "Build entire project",
+          "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+          "args": [
+              "-fdiagnostics-color=always",
+              "-g",
+              "main.cpp",
+              "menu.cpp",
+              "ohms_calculator.cpp",
+              "resistor_decoder.cpp",
+              "Basic_op.cpp",               // 手动添加的源文件
+              "BinaryCalculator.cpp",       // 手动添加的源文件
+              "Get_user_input.cpp",         // 手动添加的源文件
+              "op_amp_calculator.cpp",
+              "-o",
+              "main.exe"
+          ],
+          "options": {
+              "cwd": "${workspaceFolder}"
+          },
+          "problemMatcher": [
+              "$gcc"
+          ],
+          "group": {
+              "kind": "build",
+              "isDefault": true
+          },
+          "detail": "Compile all project source files."
+      }
+  ]
+}
