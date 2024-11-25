@@ -48,7 +48,7 @@ std::string getStringInput() {
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Ignore invalid input
     }
 
-    std::cout << "Please enter a string: ";
+    // std::cout << "Please enter a string: ";
     std::getline(std::cin, input); // Read the entire line
 
     // Validate empty input
